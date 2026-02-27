@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zipa Electronics | Tecnología</title>
+    <title>Zipa Electronics | Tecnología y Componentes</title>
     
-    <meta name="description" content="Zipa Electronics: Los mejores componentes tecnológicos, multímetros, cautines y soluciones electrónicas en un solo lugar.">
-    <meta name="keywords" content="electrónica, tecnología, componentes, multímetros, zipaquirá">
+    <meta name="description" content="Zipa Electronics: Los mejores componentes tecnológicos, multímetros, cautines y soluciones electrónicas en Zipaquirá.">
+    <meta name="keywords" content="electrónica, tecnología, componentes, multímetros, zipaquirá, cautines, sensores">
+    
+    <meta property="og:title" content="Zipa Electronics | Componentes y Soluciones">
+    <meta property="og:description" content="Los mejores componentes electrónicos en Zipaquirá. Calidad garantizada.">
+    <meta property="og:image" content="logo-zipa.png">
+    
     <link rel="icon" href="logo-zipa.png" type="image/png">
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,6 +32,7 @@
             <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nuestros-productos">Productos</a></li> 
+                <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#seccion-contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -40,21 +47,62 @@
             </div>
         </section>
 
+        <section id="servicios" class="servicios-seccion">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Nuestros Servicios Especializados</h2>
+                <div class="servicios-grid">
+                    
+                    <div class="servicio-card">
+                        <i class="fas fa-laptop-code icono-servicio"></i>
+                        <h3>Sistemas y Software</h3>
+                        <ul>
+                            <li>Formateo e Instalación de Sistemas</li>
+                            <li>Microsoft Office y Antivirus</li>
+                            <li>Actualización de Software</li>
+                            <li>Instalación de Programas y Juegos</li>
+                        </ul>
+                    </div>
+
+                    <div class="servicio-card">
+                        <i class="fas fa-tools icono-servicio"></i>
+                        <h3>Hardware y Ensamble</h3>
+                        <ul>
+                            <li>Venta de Partes y Componentes</li>
+                            <li>Ensamble de Computadores a medida</li>
+                            <li>Mantenimiento Preventivo</li>
+                            <li>Venta de Partes y Ensamble</li>
+                        </ul>
+                    </div>
+
+                    <div class="servicio-card">
+                        <i class="fas fa-microchip icono-servicio"></i>
+                        <h3>Laboratorio Electrónico</h3>
+                        <ul>
+                            <li>Reparación Electrónica Avanzada</li>
+                            <li>Mantenimiento de Equipos</li>
+                            <li>Diagnóstico de Fallas</li>
+                            <li>Soldadura de Precisión</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="garantia-seccion">
             <div class="garantia-item">
                 <span class="icono">🛡️</span>
                 <h3>Calidad Garantizada</h3>
-                <p>Todos nuestros componentes son testeados antes del envío.</p>
+                <p>Componentes testeados antes del envío.</p>
             </div>
             <div class="garantia-item">
                 <span class="icono">🚚</span>
                 <h3>Envíos Rápidos</h3>
-                <p>Despachos a todo el país en menos de 24 horas.</p>
+                <p>Despachos a todo el país en tiempo récord.</p>
             </div>
             <div class="garantia-item">
                 <span class="icono">💬</span>
                 <h3>Soporte Técnico</h3>
-                <p>Asesoría especializada para tus proyectos electrónicos.</p>
+                <p>Asesoría especializada para tus proyectos.</p>
             </div>
         </section>
 
@@ -64,111 +112,26 @@
                     <span class="etiqueta-oferta">OFERTA LIMITADA</span>
                     <h2>¡Súper Combo de Inicio!</h2>
                     <p>Lleva Multímetro + Cautín + Soldadura con un 20% de descuento.</p>
-                    <div class="contador">
-                        <div><span>00</span><small>Días</small></div>
-                        <div><span>00</span><small>Horas</small></div>
-                        <div><span>00</span><small>Min</small></div>
+                    <div class="contador" id="countdown">
+                        <div><span id="days">00</span><small>Días</small></div>
+                        <div><span id="hours">00</span><small>Horas</small></div>
+                        <div><span id="minutes">00</span><small>Min</small></div>
+                        <div><span id="seconds">00</span><small>Seg</small></div>
                     </div>
                     <a href="https://wa.me/573017723021?text=Hola!%20Me%20interesa%20la%20oferta%20del%20combo%20de%20inicio" class="boton-oferta">Reclamar Oferta</a>
                 </div>
             </div>
         </section>
 
-    <section id="nuestros-productos" class="contenedor-productos">
+        <section id="nuestros-productos" class="contenedor-productos">
+            <h2 style="width: 100%; text-align: center; color: #002d5a; margin-bottom: 40px;">Productos Destacados</h2>
+            
             <div class="tarjeta-producto">
-                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&h=300" alt="Multímetro Digital" class="img-producto">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&h=300" alt="Multímetro" class="img-producto">
                 <h3>Multímetro Digital</h3>
                 <p class="precio">$85.000</p>
-                <a href="https://wa.me/573017723021?text=Hola%20Zipa%20Electronics!%20Me%20gustar%C3%ADa%20comprar%20el%20Mult%C3%ADmetro%20Digital." target="_blank" class="boton-comprar" style="text-decoration: none; display: block;">Comprar</a>
+                <a href="https://wa.me/573017723021" target="_blank" class="boton-comprar">Comprar</a>
             </div>
 
             <div class="tarjeta-producto">
-                <img src="https://images.unsplash.com/photo-1620216434237-975586617a2a?auto=format&fit=crop&w=400&h=300" alt="Cautín Profesional" class="img-producto">
-                <h3>Cautín Profesional</h3>
-                <p class="precio">$45.000</p>
-                <a href="https://wa.me/573017723021?text=Hola%20Zipa%20Electronics!%20Me%20gustar%C3%ADa%20comprar%20el%20Caut%C3%ADn%20Profesional." target="_blank" class="boton-comprar" style="text-decoration: none; display: block;">Comprar</a>
-            </div>
-
-            <div class="tarjeta-producto">
-                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=400&h=300" alt="Osciloscopio" class="img-producto">
-                <h3>Osciloscopio Digital</h3>
-                <p class="precio">$320.000</p>
-                <a href="https://wa.me/573017723021?text=Hola%20Zipa%20Electronics!%20Me%20gustar%C3%ADa%20comprar%20el%20Osciloscopio%20Digital." target="_blank" class="boton-comprar" style="text-decoration: none; display: block;">Comprar</a>
-            </div>
-        </section>
-
-        <section id="seccion-contacto" class="contacto-seccion">
-            <h2>Contáctanos</h2>
-            <div class="contacto-flex">
-               <form action="https://formspree.io/f/mjgeyqoj" method="POST" class="formulario">
-    <input type="hidden" name="_next" value="https://TU-USUARIO.github.io/NOMBRE-REPOSITORIO/gracias.html">
-    
-    <input type="text" name="nombre" placeholder="Tu Nombre" required>
-    <input type="email" name="email" placeholder="Tu Correo" required>
-    <textarea name="mensaje" placeholder="¿En qué podemos ayudarte?" rows="5" required></textarea>
-    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
-</form>
-
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51141489705!2d-74.107807!3d4.64829755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1771350406276!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="pie-pagina">
-        <div class="footer-contenido">
-            <p>© 2026 Zipa Electronics - Todos los derechos reservados</p>
-            <div class="redes-sociales">
-                <a href="https://facebook.com/zipaelectronics" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-                <a href="https://instagram.com/zipaelectronics" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://wa.me/573017723021" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            </div>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/573017723021?text=Hola%20Zipa%20Electronics!%20Deseo%20más%20información." class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script>
-        // Lógica del Loader
-        window.addEventListener('load', () => {
-            const loader = document.getElementById('loader');
-            setTimeout(() => {
-                loader.style.opacity = '0';
-                setTimeout(() => loader.style.display = 'none', 500);
-            }, 1000); 
-        });
-
-        // Lógica del Contador Automático
-        const fechaLimite = new Date();
-        fechaLimite.setDate(fechaLimite.getDate() + 2); // Oferta expira en 2 días
-
-        function actualizarContador() {
-            const ahora = new Date();
-            const diferencia = fechaLimite - ahora;
-
-            if (diferencia <= 0) {
-                document.querySelector('.contador').innerHTML = "¡Oferta terminada!";
-                return;
-            }
-
-            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-
-            const elementos = document.querySelectorAll('.contador span');
-            if(elementos.length >= 3) {
-                elementos[0].innerText = dias.toString().padStart(2, '0');
-                elementos[1].innerText = horas.toString().padStart(2, '0');
-                elementos[2].innerText = minutos.toString().padStart(2, '0');
-            }
-        }
-
-        setInterval(actualizarContador, 1000);
-        actualizarContador();
-    </script>
-</body>
-</html>
-
+                <img src="
